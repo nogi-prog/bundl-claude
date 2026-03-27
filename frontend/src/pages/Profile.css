@@ -1,0 +1,67 @@
+.profile-header {
+  display: flex; align-items: center; gap: 20px; margin-bottom: 32px;
+  padding: 28px; background: #fff; border: 1px solid var(--ink-6);
+  border-radius: var(--radius-xl); box-shadow: var(--shadow-sm);
+}
+.profile-avatar {
+  width: 72px; height: 72px; border-radius: 50%; background: var(--brand);
+  color: #fff; font-family: var(--font-display); font-size: 28px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.profile-name { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+.profile-email { font-size: 14px; color: var(--ink-3); margin-bottom: 8px; }
+
+.profile-tabs {
+  display: flex; gap: 4px; border-bottom: 2px solid var(--ink-6);
+  margin-bottom: 32px;
+}
+.profile-tab {
+  padding: 12px 20px; font-size: 14px; font-weight: 500; color: var(--ink-3);
+  border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all .15s;
+}
+.profile-tab:hover { color: var(--ink); }
+.profile-tab.active { color: var(--brand); border-bottom-color: var(--brand); }
+
+.profile-section { display: flex; flex-direction: column; gap: 24px; }
+.membership-section-title { font-size: 16px; font-weight: 600; color: var(--ink-2); }
+
+.memberships-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.membership-card { padding: 16px; display: flex; flex-direction: column; gap: 0; }
+.membership-card-inner { display: flex; gap: 14px; }
+.membership-img { width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-md); flex-shrink: 0; }
+.membership-info { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.membership-brand { font-size: 11px; font-weight: 700; color: var(--brand); text-transform: uppercase; letter-spacing: .06em; }
+.membership-name { font-size: 14px; font-weight: 600; line-height: 1.3; }
+.membership-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
+.membership-details { display: flex; justify-content: space-between; font-size: 12px; color: var(--ink-3); margin-top: 4px; }
+.membership-actions { display: flex; gap: 8px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--ink-7); flex-wrap: wrap; }
+
+/* Payment methods */
+.pm-list { display: flex; flex-direction: column; gap: 12px; }
+.pm-card { padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.pm-card.default { border-color: var(--brand); }
+.pm-card-left { display: flex; align-items: center; gap: 12px; flex: 1; }
+.pm-card-icon { font-size: 24px; }
+.pm-card-name { font-size: 15px; font-weight: 500; }
+.pm-card-added { font-size: 12px; color: var(--ink-4); }
+.pm-card-actions { display: flex; gap: 8px; }
+.danger-text { color: var(--danger) !important; }
+
+/* Become seller */
+.become-seller-card {
+  max-width: 480px; padding: 40px; display: flex; flex-direction: column;
+  align-items: center; text-align: center; gap: 16px;
+}
+.become-seller-icon { font-size: 52px; }
+.become-seller-card h2 { font-size: 24px; }
+.become-seller-card p { font-size: 15px; color: var(--ink-3); }
+.become-seller-perks { list-style: none; text-align: left; width: 100%; display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+.seller-request-sent {
+  background: var(--success-bg); color: var(--success); padding: 14px 20px;
+  border-radius: var(--radius-md); font-size: 14px; font-weight: 500; width: 100%; text-align: center;
+}
+
+/* Star rating */
+.star-rating { display: flex; gap: 4px; }
+.star-btn { font-size: 28px; color: var(--ink-5); transition: color .1s; }
+.star-btn:hover, .star-btn.active { color: var(--warning); }

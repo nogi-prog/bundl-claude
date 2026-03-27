@@ -1,0 +1,44 @@
+.group-card {
+  background: #fff; border: 1px solid var(--ink-6); border-radius: var(--radius-lg);
+  overflow: hidden; display: flex; flex-direction: column;
+  transition: transform .2s ease, box-shadow .2s ease; cursor: pointer;
+}
+.group-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
+.group-card-image {
+  position: relative; padding-top: 62%; overflow: hidden; background: var(--ink-7);
+}
+.group-card-image img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  transition: transform .3s ease;
+}
+.group-card:hover .group-card-image img { transform: scale(1.04); }
+
+.group-card-badges {
+  position: absolute; top: 10px; left: 10px; display: flex; flex-direction: column; gap: 4px;
+}
+.group-card-category {
+  position: absolute; bottom: 10px; right: 10px;
+  background: rgba(15,14,13,.65); color: #fff; font-size: 11px; font-weight: 500;
+  padding: 3px 9px; border-radius: var(--radius-full); backdrop-filter: blur(4px);
+}
+
+.group-card-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.group-card-brand { font-size: 11px; font-weight: 600; color: var(--brand); text-transform: uppercase; letter-spacing: .06em; }
+.group-card-name { font-size: 15px; font-weight: 600; color: var(--ink); line-height: 1.3; }
+.group-card-price { display: flex; align-items: baseline; gap: 6px; }
+.price-amount { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--ink); }
+.price-label { font-size: 12px; color: var(--ink-4); }
+
+.group-card-progress { display: flex; flex-direction: column; gap: 6px; }
+.progress-meta { display: flex; justify-content: space-between; font-size: 12px; color: var(--ink-3); }
+.progress-count strong { color: var(--ink); }
+.progress-time { font-weight: 500; }
+
+.group-card-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 8px; border-top: 1px solid var(--ink-7); margin-top: auto;
+}
+.seller-name { font-size: 12px; color: var(--ink-4); }
+.seller-rating { font-size: 12px; color: var(--warning); font-weight: 500; }
+.rating-count { color: var(--ink-4); font-weight: 400; margin-left: 2px; }

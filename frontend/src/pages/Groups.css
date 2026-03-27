@@ -1,0 +1,37 @@
+.groups-layout { display: grid; grid-template-columns: var(--sidebar-w) 1fr; gap: 32px; align-items: start; }
+
+/* Sidebar */
+.groups-sidebar { position: sticky; top: calc(var(--nav-h) + 24px); }
+.filter-section { margin-bottom: 28px; }
+.filter-label { font-size: 11px; font-weight: 700; color: var(--ink-4); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; padding: 0 10px; }
+.filter-btn {
+  display: block; width: 100%; text-align: left; padding: 9px 12px;
+  border-radius: var(--radius-md); font-size: 14px; color: var(--ink-2);
+  transition: all .15s; cursor: pointer;
+}
+.filter-btn:hover { background: var(--ink-7); color: var(--ink); }
+.filter-btn.active { background: var(--brand-light); color: var(--brand); font-weight: 500; }
+
+/* Main */
+.groups-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px; }
+.groups-title { font-family: var(--font-display); font-size: 26px; font-weight: 700; }
+.groups-count { font-size: 14px; color: var(--ink-4); }
+
+.active-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.filter-tag {
+  display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px;
+  background: var(--ink-7); border: 1px solid var(--ink-5); border-radius: var(--radius-full);
+  font-size: 13px; color: var(--ink-2);
+}
+.filter-tag button { font-size: 16px; color: var(--ink-4); line-height: 1; cursor: pointer; }
+.filter-tag button:hover { color: var(--danger); }
+
+.pagination { display: flex; gap: 8px; justify-content: center; margin-top: 40px; }
+.page-btn {
+  width: 36px; height: 36px; border-radius: var(--radius-md); font-size: 14px;
+  color: var(--ink-2); border: 1px solid var(--ink-5); transition: all .15s;
+}
+.page-btn:hover { border-color: var(--brand); color: var(--brand); }
+.page-btn.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+
+@media (max-width: 900px) { .groups-layout { grid-template-columns: 1fr; } .groups-sidebar { position: static; display: flex; gap: 12px; overflow-x: auto; } .filter-section { margin-bottom: 0; white-space: nowrap; } }

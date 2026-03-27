@@ -1,0 +1,25 @@
+.pickup-code-card {
+  background: #fff; border: 1.5px solid var(--ink-5); border-radius: var(--radius-xl);
+  padding: 28px; display: flex; flex-direction: column; align-items: center; gap: 20px;
+  text-align: center; box-shadow: var(--shadow-md);
+}
+.pickup-code-header { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.pickup-code-icon { font-size: 32px; }
+.pickup-code-header h4 { font-size: 18px; font-weight: 700; }
+.pickup-code-header p { font-size: 13px; color: var(--ink-3); }
+
+.pickup-qr-wrap {
+  background: #fff; padding: 12px; border-radius: var(--radius-md);
+  border: 1px solid var(--ink-6);
+}
+.pickup-qr { width: 160px; height: 160px; display: block; }
+.qr-fallback { width: 160px; height: 160px; display: flex; align-items: center; justify-content: center; color: var(--ink-4); font-size: 13px; }
+
+.pickup-code-alphanumeric { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; }
+.pickup-code-chars { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.pickup-char {
+  width: 36px; height: 44px; display: flex; align-items: center; justify-content: center;
+  background: var(--ink-7); border: 1px solid var(--ink-6); border-radius: var(--radius-sm);
+  font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--ink);
+  letter-spacing: 0;
+}
